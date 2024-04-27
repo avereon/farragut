@@ -9,12 +9,12 @@ on:
 env:
   JAVA_DISTRO: 'adopt'
   JAVA_VERSION: '21'
-  MAVEN_PARMS: "-B -U -V --settings .github/settings.xml --file pom.xml"
+  MAVEN_PARMS: "-B -U -V --file pom.xml"
   NODE_VERSION: '20'
 
 jobs:
   build-be:
-    name: Compile, Unit Test, CodeQL
+    name: BE Analyze, Compile, Test
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -36,7 +36,7 @@ jobs:
 
 
   build-fe:
-    name: Compile, Unit Test, CodeQL
+    name: FE Compile, Test
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
