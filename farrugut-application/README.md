@@ -4,7 +4,7 @@
 
 ## Prerequesites
 
-- Node.js
+- Node.js 20 lts
 - npm
 
 ## Installation
